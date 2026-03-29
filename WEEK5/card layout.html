@@ -1,0 +1,68 @@
+Name-maneesh koundinya,Roll no-AV.SC.U4CSE25253,Section-CSE-C
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Card Using div Element</title>
+        <style>
+            body {
+                background-color: white;
+                font-style: italic;}
+            .container{ 
+                display: flex;
+                flex-wrap: wrap;
+                flex-direction: row;
+                background-color:aliceblue;
+                border: 2px 2px 2px solid black;
+                box-shadow: 5px rgb(29, 27, 27);
+                justify-content: center;
+                padding: 20px;
+                text-align: center;
+            }
+            .card {
+                background-color: lightblue;
+                border: 1px solid black;
+                box-shadow: 3px 3px 6px rgb(23, 20, 2);
+                margin: 10px auto;
+                padding: 15px;
+                width: 250px;
+            }
+            .card img{
+                width: 100%;
+                height: auto;
+            }
+            .card button{
+                background-color: lightblue;
+                color:rgb(36, 5, 5);
+                text-align: center;
+            }
+            .card button:hover{
+                background-color:lightblue;
+                color:red;
+                text-align: center;
+            }
+        </style>
+    </head>
+    <body>
+        <h2 align="center">Cards</h2> 
+        <div class="container">
+            <div class="card">
+                <img src="campus2.jpg" alt="Image">
+                <h3>Web Design</h3>
+                <p>Learn how to design beautiful and responsive websites.</p>
+                <button>Learn More</button>
+            </div>
+            <div class="card">
+                <img src="campus2.jpg" alt="Image">
+                <h3>Web Development</h3>
+                <p>Master the art of building dynamic and interactive web applications.</p>
+                <button>Learn More</button>
+            </div>
+            <div class="card">
+                <img src="campus2.jpg" alt="Image">
+                <h3>SEO Optimization</h3>
+                <p>Boost your website's visibility and ranking on search engines.</p>
+                <button>Learn More</button>
+            </div>
+        </div>
+    </body>
+</html>

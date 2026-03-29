@@ -1,0 +1,85 @@
+Name:Maneesh Koundinya;Roll No:AV.SC.U4CSE25253;Section:CSE-C
+<!DOCTYPE html>
+<html>
+<head>
+<title>My E-commerce Store</title>
+<style>
+body {
+    margin:0;
+    font-family:Arial,sans-serif;
+    background-color:whitesmoke;
+}
+.container{
+    display:grid;
+    grid-template-rows:auto auto 1fr auto;
+    grid-template-columns:200px 1fr;
+    grid-template-areas:
+        "header header"
+        "sale sale"
+        "sidebar products"
+        "footer footer";
+}
+.header{
+    grid-area:header;
+    background-color:blue;
+    color:white;
+    text-align:center;
+    padding:20px;
+    font-size:16px;
+}
+.sale{
+    grid-area:sale;
+    background-color:yellow;
+    color:black;
+    text-align: center;
+    padding: 20px;
+    font-weight:bold;
+}
+.sidebar{
+    grid-area:sidebar;
+    background-color:lightgray;
+    padding:40px;
+}
+.frame{
+      grid-area: products;
+      width:100%;
+      height:700px;
+      border:none;
+}
+.sidebar h2{
+    margin-top:0;
+}
+.sidebar a:hover {
+    color: blue;
+}
+.footer{
+    grid-area:footer;
+    background-color:black;
+    color:white;
+    text-align:center;
+    padding:2px;
+}
+</style>
+</head>
+<body>
+<div class="container">
+    <div class="header">
+        <h2>Welcome to My E-commerce Store</h2>
+    </div>
+    <div class="sale">
+        <p>🔥Big Sale! Up to 50% off on selected items!🔥</p>
+    </div>
+    <div class="sidebar">
+        <h2>Categories</h2>
+        <hr>
+         <a href="electronicsweek(6).html" target="frame">Electronics</a>
+         <a href="clothingweek(6).html" target="frame">Clothes</a>
+         <a href="Home&appliances(6).html" target="frame">Accessories</a>
+    </div>
+        <iframe class="frame" name="frame" src="electronicsweek(6).html"></iframe>
+    <div class="footer">
+        <p>&copy; 2024 My E-commerce Store. All rights reserved.</p>
+    </footer>
+</div>
+</body>
+</html>

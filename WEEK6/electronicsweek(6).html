@@ -1,0 +1,99 @@
+Name:Maneesh Koundinya;Roll No:AV.SC.U4CSE25253;Section:CSE-C
+<!DOCTYPE html>
+<html>
+<style>
+body {
+    margin:0;
+    font-family:Arial,sans-serif;
+    background-color:whitesmoke;
+}
+.container{
+    display:grid;
+    grid-template-rows:auto auto 1fr auto;
+    grid-template-columns:200px 1fr;
+    grid-template-areas:
+        "header header"
+        "products products"
+}
+.header{
+    grid-area:header;
+    color:black;
+    text-align:center;
+    padding:20px;
+    font-size:16px;
+}
+.products{
+    grid-area:products;
+    display:grid;
+    grid-template-columns:repeat(2,1fr);
+    gap: 15px;
+}
+.card{
+    background-color:white;
+    padding:15px;
+    text-align:center;
+    border-radius:10px;
+}
+.card img{
+    width:45%;
+    height:300px;
+    border-radius:10px;
+    background-color:aqua;
+}
+.price{
+    color:green;
+    font-weight:bold;
+    margin-top:10px;
+}
+button{
+    margin-top:10px;
+    padding:5px 10px;
+    font-size:16px;
+    background-color:red;
+    color:white;
+    border:none;
+    border-radius:5px;
+    cursor:pointer;
+}
+button:hover{
+    background-color:yellow;
+}
+</style>
+</head>
+<body>
+<div class="container">
+    <div class="header">
+        <h1 style="text-align:center;">Electronics</h>
+    </div>
+    <div class="products">
+        <div class="card">
+            <img src="laptop.jpg" alt="Laptop">
+            <h3>Laptop</h3>
+            <p></p>
+            <p class="price">$<del>649.99</del>$609.99</p>
+            <button>Add to Cart</button>
+        </div>
+        <div class="card">
+            <img src="mouse.png" alt="Mouse">
+            <h3>Mouse</h3>
+            <p></p>
+            <p class="price"><del>$5.99</del>$4.99</p>
+            <button>Add to Cart</button>
+        </div>
+        <div class="card">
+            <img src="earpods.jpg" alt="Earpods">
+            <h3>Earpods</h3>
+            <p></p>
+            <p class="price"><del>$9.56</del>$8.99</p>
+            <button>Add to Cart</button>
+        </div>
+        <div class="card">
+            <img src="keyboard.jpg" alt="Keyboard">
+            <h3>Keyboard</h3>
+            <p></p>
+            <p class="price"><del>$13.49</del>$10.99</p>
+            <button>Add to Cart</button>
+        </div> 
+</div>
+</body>
+</html>

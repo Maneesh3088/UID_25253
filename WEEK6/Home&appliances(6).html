@@ -1,0 +1,99 @@
+Name:Maneesh Koundinya;Roll No:AV.SC.U4CSE25253;Section:CSE-C
+<!DOCTYPE html>
+<html>
+<style>
+body {
+    margin:0;
+    font-family:Arial,sans-serif;
+    background-color:whitesmoke;
+}
+.container{
+    display:grid;
+    grid-template-rows:auto auto 1fr auto;
+    grid-template-columns:200px 1fr;
+    grid-template-areas:
+        "header header"
+        "products products"
+}
+.header{
+    grid-area:header;
+    color:black;
+    text-align:center;
+    padding:20px;
+    font-size:16px;
+}
+.products{
+    grid-area:products;
+    display:grid;
+    grid-template-columns:repeat(2,1fr);
+    gap: 15px;
+}
+.card{
+    background-color:white;
+    padding:15px;
+    text-align:center;
+    border-radius:10px;
+}
+.card img{
+    width:45%;
+    height:300px;
+    border-radius:10px;
+    background-color:aqua;
+}
+.price{
+    color:green;
+    font-weight:bold;
+    margin-top:10px;
+}
+button{
+    margin-top:10px;
+    padding:5px 10px;
+    font-size:16px;
+    background-color:red;
+    color:white;
+    border:none;
+    border-radius:5px;
+    cursor:pointer;
+}
+button:hover{
+    background-color:yellow;
+}
+</style>
+</head>
+<body>
+<div class="container">
+    <div class="header">
+        <h1 style="text-align:center;">Home&Appliances</h1>
+    </div>
+    <div class="products">
+        <div class="card">
+            <img src="refrigerator.jpg" alt="Refrigerator">
+            <h3>Refrigerator</h3>
+            <p></p>
+            <p class="price">$<del>19.99</del>$15.99</p>
+            <button>Add to Cart</button>
+        </div>
+        <div class="card">
+            <img src="washing machine.png" alt="Washing Machine">
+            <h3>Washing Machine</h3>
+            <p></p>
+            <p class="price"><del>$59.99</del>$49.99</p>
+            <button>Add to Cart</button>
+        </div>
+        <div class="card">
+            <img src="microwave.jpg" alt="Microwave">
+            <h3>Microwave</h3>
+            <p></p>
+            <p class="price"><del>$99.99</del>$89.99</p>
+            <button>Add to Cart</button>
+        </div>
+        <div class="card">
+            <img src="television.png" alt="Television">
+            <h3>Television</h3>
+            <p></p>
+            <p class="price"><del>$13.49</del>$10.99</p>
+            <button>Add to Cart</button>
+        </div> 
+</div>
+</body>
+</html>
