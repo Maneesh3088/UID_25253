@@ -1,0 +1,64 @@
+<center>Name: Maneesh Koundinya, Roll no: AV.SC.U4CSE25253, Section: CSE-C</center>
+<br>
+<!DOCTYPE html>
+<html>
+  <head>
+  <title>Prime Number or Not</title>
+  <style>
+  body {
+    text-align: center;
+    font-family: Arial;
+    margin-top: 50px;
+    background-color: lightgreen;
+  }
+  input {
+    padding: 8px;
+    font-size: 16px;
+    border: 2px black solid;
+    border-radius: 5px;
+  }
+  button {
+    padding: 8px 15px;
+    font-size: 16px;
+    background-color: blue;
+    color: white;
+    border: none;
+    cursor: pointer;
+  }
+  button:hover {
+    background-color: darkblue;
+  }
+    .box {
+        border: 2px solid black;
+        display: inline-block;
+        padding: 30px;
+        border-radius: 20px;
+        background-color: white;
+        }
+ </style>
+ </head>
+ <body>
+ <div class="box">
+ <h1>Check if a number is Prime or Not</h1>
+ <input type="text" id="num" placeholder="Enter number">
+ <br><br>
+ <b><h2><p id="result"></p></h2></b>
+ <button onclick="check()">Check</button>
+ <script>
+function check() {
+    let n = document.getElementById("num").value;
+    let count = 0;
+    for (let i = 1; i <= n; i++) {
+        if (n % i == 0) {
+            count++;
+        }
+    }
+    if (count == 2) {
+        document.getElementById("result").innerHTML = n + " is Prime Number";
+    } else {
+        document.getElementById("result").innerHTML = n + " is Not Prime Number";
+    }
+}
+</script>
+</body>
+</html>
