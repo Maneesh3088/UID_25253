@@ -1,0 +1,74 @@
+Name-maneesh koundinya,Roll no-AV.SC.U4CSE25253,Section-CSE-C
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+body {
+    text-align: center;
+    font-family: Arial;
+    background: rgb(0, 191, 255);
+    padding-top: 50px;
+}
+.container {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 15px;
+    width: 250px;
+    margin: auto;
+    background: white;
+    padding: 20px;
+    border-radius: 10px;
+}
+input {
+    padding: 10px;
+    border: 2px solid silver;
+    border-radius: 5px;
+}
+input:hover {
+    border-color: #4facfe;
+    outline: none;
+}
+button {
+    padding: 10px;
+    background: lightgreen;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+button:hover {
+    background: red;
+}
+</style>
+</head>
+<body>
+<h2 style="color:white;">Student Grade Checker</h2>
+<div class="container">
+    <input type="text" id="m1" placeholder="Subject 1">
+    <input type="text" id="m2" placeholder="Subject 2">
+    <input type="text" id="m3" placeholder="Subject 3">
+    <input type="text" id="m4" placeholder="Subject 4">
+    <input type="text" id="m5" placeholder="Subject 5">
+    <input type="text" id="m6" placeholder="Subject 6">
+    <button onclick="check()">Calculate</button>
+</div>
+<script>
+function check() {
+    var m1 = Number(document.getElementById("m1").value);
+    var m2 = Number(document.getElementById("m2").value);
+    var m3 = Number(document.getElementById("m3").value);
+    var m4 = Number(document.getElementById("m4").value);
+    var m5 = Number(document.getElementById("m5").value);
+    var m6 = Number(document.getElementById("m6").value);
+    var avg = (m1 + m2 + m3 + m4 + m5 + m6) / 6;
+    var grade;
+    if (avg < 60) grade = "F";
+    else if (avg < 70) grade = "D";
+    else if (avg < 80) grade = "C";
+    else if (avg < 90) grade = "B";
+    else grade = "A";
+    alert("Average = " + avg + "\nGrade = " + grade);
+}
+</script>
+</body>
+</html>

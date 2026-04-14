@@ -1,0 +1,67 @@
+Name-maneesh koundinya,Roll no-AV.SC.U4CSE25253,Section-CSE-C
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+body {
+    text-align: center;
+    font-family: Arial;
+    background:rgb(0, 191, 255);
+    padding-top: 50px;
+}
+.container {
+    display:grid;
+    grid-template-columns:1fr;
+    gap: 15px;
+    width: 250px;
+    margin: auto;
+    background:white;
+    padding:20px;
+    border-radius:10px;
+}
+input {
+    padding:10px;
+    border: 2px solid silver;
+    border-radius: 5px;
+}
+input:hover {
+    border-color: #4facfe;
+    outline: none;
+}
+button {
+    padding: 10px;
+    background:lightgreen;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+button:hover {
+    background:red;
+}
+</style>
+</head>
+<body>
+<h2 style="color:white;">Odd or Even from 0 to 15</h2>
+<div class="container">
+<center>
+<input type="text" id="n" placeholder="Enter a number">
+<button onclick="check()">Check</button>
+<p id="out"></p>
+</center>
+</div>
+<script>
+function check() {
+    var n = Number(document.getElementById("n").value);
+    var text = "";
+    for (var i = 0; i <= n; i++) {
+        if (i % 2 == 0)
+            text += i + " is Even<br>";
+        else
+            text += i + " is Odd<br>";
+    }
+    document.getElementById("out").innerHTML = text;
+}
+</script>
+</body>
+</html>
