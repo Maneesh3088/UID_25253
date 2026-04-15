@@ -1,0 +1,44 @@
+Name-maneesh koundinya,Roll no-AV.SC.U4CSE25253,Section-CSE-C
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Sign Checker</title>
+</head>
+<style>
+    body {
+        font-family: Arial, sans-serif;
+        text-align: center;
+        margin-top: 50px;
+    }
+    button {
+        padding: 10px 20px;
+        font-size: 16px;
+        background-color:red;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+    }
+    button:hover {
+        background-color:yellow;
+    }
+</style>
+<body>
+    <h2>Sign Of Product</h2>
+    <button onclick="check()">Check</button>
+<script>
+function check() {
+    let a = parseFloat(prompt("Enter first number:"));
+    let b = parseFloat(prompt("Enter second number:"));
+    let c = parseFloat(prompt("Enter third number:"));
+    let p = a * b * c;
+    if (p > 0) {
+        alert("The sign is plus(+)");
+    } else if (p < 0) {
+        alert("The sign is minus(-)");
+    } else {
+        alert("Invalid input detected.");
+    }
+}
+</script>
+</body>
+</html>

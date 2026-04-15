@@ -1,0 +1,52 @@
+Name-maneesh koundinya,Roll no-AV.SC.U4CSE25253,Section-CSE-C
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Subject Average Marks</title>
+</head>
+<style>
+    body {
+        font-family: Arial, sans-serif;
+        text-align: center;
+        margin-top: 50px;
+    }
+    input {
+        margin: 5px;
+        padding: 10px;
+        font-size: 16px;
+        width: 100px;
+    }
+    button {
+        padding: 10px 20px;
+        font-size: 16px;
+        background-color:red;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+    }
+    button:hover {
+        background-color:yellow;
+    }
+</style>
+<body>
+    <h2>Subject Average Marks</h2>
+    <button onclick="check()">Check</button>
+    <script>
+        function check() {
+    let a = parseFloat(prompt("Enter first subject mark:"));
+    let b = parseFloat(prompt("Enter second subject mark:"));
+    let c = parseFloat(prompt("Enter third subject mark:"));
+    let d = parseFloat(prompt("Enter fourth subject mark:"));
+    let e = parseFloat(prompt("Enter fifth subject mark:"));
+    let f = parseFloat(prompt("Enter sixth subject mark:"));
+    let avg = (a + b + c + d + e + f) / 6;
+    let grade;
+    if (avg>= 90) grade = "A";
+    else if (avg >= 80) grade = "B";
+    else if (avg >= 70) grade = "C";
+    else if (avg >= 60) grade = "D";
+    else grade = "F";
+    alert("Average = " + avg + "\nGrade = " + grade);
+    }
+    </script>
+</html>

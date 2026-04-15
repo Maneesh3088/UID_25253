@@ -1,0 +1,44 @@
+Name-maneesh koundinya,Roll no-AV.SC.U4CSE25253,Section-CSE-C
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Sign Checker</title>
+</head>
+<style>
+    body {
+        font-family: Arial, sans-serif;
+        text-align: center;
+        margin-top: 50px;
+    }
+    button {
+        padding: 10px 20px;
+        font-size: 16px;
+        background-color:red;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+    }
+    button:hover {
+        background-color:yellow;
+    }
+</style>
+<body>
+    <h2>Find Largest Number</h2>
+    <button onclick="check()">Check</button>
+<script>
+function check() {
+    let a = parseFloat(prompt("Enter first number:"));
+    let b = parseFloat(prompt("Enter second number:"));
+    let c = parseFloat(prompt("Enter third number:"));
+    let d = parseFloat(prompt("Enter fourth number:"));
+    let e = parseFloat(prompt("Enter fifth number:"));
+    let largest = a;
+    if (b > largest) largest = b;
+    if (c > largest) largest = c;
+    if (d > largest) largest = d;
+    if (e > largest) largest = e;
+    alert("The Largest number is: " + largest);
+}
+</script>
+</body>
+</html>
