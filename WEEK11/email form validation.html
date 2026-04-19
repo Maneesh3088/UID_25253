@@ -1,0 +1,35 @@
+Name-maneesh koundinya,Roll no-AV.SC.U4CSE25253,Section-CSE-C
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Email Validation</title>
+</head>
+<body>
+<h2>Registration Form</h2>
+<label for="email">Email:</label>
+<input id="email" onkeyup="check()"><br><br>
+<button onclick="submitForm()">Submit</button>
+<p id="msg"></p>
+<script>
+let pattern = /^[^ ]+@[^ ]+\.[a-z]{2,3}$/;
+function check() {
+    let emailValue = document.getElementById("email").value;
+    let message = document.getElementById("msg");
+    if (pattern.test(emailValue)) {
+        message.innerText = "Valid Email ✅";
+    } else {
+        message.innerText = "Invalid Email ❌";
+    }
+}
+function submitForm() {
+    let emailValue = document.getElementById("email").value;
+    let message = document.getElementById("msg");
+    if (pattern.test(emailValue)) {
+        message.innerText = "Email is valid and submitted successfully ✅";
+    } else {
+        message.innerText = "Email is invalid. Submission unsuccessful ❌";
+    }
+}
+</script>
+</body>
+</html>

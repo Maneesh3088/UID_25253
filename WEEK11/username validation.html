@@ -1,0 +1,25 @@
+Name-maneesh koundinya,Roll no-AV.SC.U4CSE25253,Section-CSE-C
+<!DOCTYPE html>
+<html>
+<head>
+    <title> Username Validation </title>
+</head>
+<body>
+    <h2>Enter Username</h2>
+    <input type="text" id="username" onkeyup="checkUsername()">
+    <p id="message"></p>
+    <script>
+    function checkUsername() {
+        let username = document.getElementById("username").value;
+        let message = document.getElementById("message");
+        if (username.length < 5) {
+           document.getElementById("message").innerHTML = "Minimum 5 characters required";
+            document.getElementById("message").style.color = "red";
+        } else {
+            document.getElementById("message").innerHTML = "Valid Username";
+            document.getElementById("message").style.color = "green";
+        }
+    }
+    </script>
+ </body>
+</html>
